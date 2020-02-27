@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Home Page</title>
+</head>
+<body>
+	<div>
+		<h1>Welcome Home Admin! <%= user.username%></h1> 		
+	</div>
+
+	<a href="/home/alluser"> View users</a> |
+	<a href="/home/myinfo"> My Information</a> |
+	<a href="/logout"> logout</a><br>
+
+
+	Name:<%= user.username %>    <br>
+	Id: <%= user.id %> <br>
+	Password: <%= user.password %> <br>
+	First name: <%= user.firstname %> <br>
+	Email: <%= user.email %> <br>
+	Type: <%= user.type %>
+</body>
+</html>
